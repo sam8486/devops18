@@ -22,3 +22,11 @@ versioning_configuration {
 status = "Enabled"
 }
 }
+
+terraform {
+backend "s3" {
+bucket="sm788.flm.bucket"
+key = "prod/terraform.tfstate"
+region="us-east-1"
+}
+}
