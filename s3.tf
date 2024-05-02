@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "one" {
-  bucket = "esu_flm.bucket"
+  bucket = "eshu.flm-devops.bucket"
 }
 
 resource "aws_s3_bucket_ownership_controls" "two" {
