@@ -24,9 +24,10 @@ status = "Enabled"
 }
 
 terraform {
-backend "s3" {
-bucket="sm788.flm.bucket"
-key = "prod/terraform.tfstate"
-region="us-east-1"
+  backend "s3" {
+    bucket = "sm788.flm.bucket"     # Specifies the name of the S3 bucket
+    key    = "prod/terraform.tfstate"  # Specifies the path to the state file within the bucket
+    region = "us-east-1"            # Specifies the AWS region where the S3 bucket is located
+  }
 }
-}
+
