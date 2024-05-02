@@ -1,7 +1,7 @@
 resource "aws_launch_configuration" "web_server_as" {
     image_id           = "ami-0830c9faf0efc29ff"
     instance_type = "t2.micro"
-    key_name = "manish"
+    key_name = "eshu-kp"
 }
    
 
